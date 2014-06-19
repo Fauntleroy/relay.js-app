@@ -1,0 +1,183 @@
+body {
+  background: #ffffff;
+  color: #323232;
+  font: 14px Helvetica, sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: #2d64eb;
+}
+h1 {
+  font-size: 24px;
+}
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-reset > li {
+  margin: 0;
+  padding: 0;
+}
+.list-horizontal > li {
+  display: inline-block;
+}
+.tooltip {
+  display: inline-block;
+  padding: 0 4px 1px 4px;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  font-size: 10px;
+  font-style: normal;
+  text-align: center;
+  vertical-align: middle;
+  background: #afafaf;
+  color: #ffffff;
+}
+.tooltip.urgent {
+  background: #eb1e23;
+}
+.user-color-1 {
+  color: #00d7d7;
+}
+.user-color-2 {
+  color: #eb1e23;
+}
+.user-color-3 {
+  color: #00d705;
+}
+#channels {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 50px 30px 0 30px;
+}
+#channels ul.channels-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#channels ul.channels-list > li {
+  margin: 0;
+  padding: 0;
+}
+#channels ul.channels-list > li {
+  display: inline-block;
+}
+#channels ul.channels-list > li {
+  position: relative;
+  margin-right: 10px;
+}
+#channels ul.channels-list > li.active h1 {
+  color: #000000;
+}
+#channels ul.channels-list > li:not(.active) h1 {
+  font-size: 18px;
+}
+#channels ul.channels-list > li a:hover h1 {
+  -webkit-transform: scale(1.25);
+}
+#channels ul.channels-list > li h1 {
+  -webkit-transform-origin: left bottom;
+  -webkit-transition: all 250ms;
+  margin: 0;
+}
+#channels ul.channels-list > li var.unread {
+  position: absolute;
+  top: -12px;
+  left: 100%;
+}
+#channels a {
+  color: #afafaf;
+}
+#messages {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  bottom: 80px;
+  left: 0;
+  margin: 0 30px 0 30px;
+}
+#messages p {
+  margin: 5px 0;
+}
+#messages div.topic {
+  margin-bottom: 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px #e1e1e1 solid;
+}
+#messages ul.messages-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#messages ul.messages-list > li {
+  margin: 0;
+  padding: 0;
+}
+#messages ul.messages-list > li {
+  margin: 12px 0;
+}
+#messages ul.messages-list > li.status {
+  font-size: 11px;
+  font-style: italic;
+  color: #afafaf;
+}
+#messages time {
+  float: right;
+  font-size: 11px;
+  font-style: normal;
+  color: #afafaf;
+}
+#messages div.source {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+}
+#messages div.contents {
+  padding-left: 110px;
+}
+#messages a.user {
+  font-weight: bold;
+}
+#users {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 100%;
+  bottom: 80px;
+}
+#message {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 30px 30px 30px;
+}
+#message form {
+  margin: 0;
+  padding: 0;
+}
+#message textarea {
+  -webkit-transition: all 250ms;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: #e1e1e1 1px solid;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+  background: #fafafa;
+}
+#message textarea:hover {
+  border-color: #afafaf;
+}
+#message textarea:focus {
+  border-color: #afafaf;
+  background: #ffffff;
+}
